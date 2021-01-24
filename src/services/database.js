@@ -1,5 +1,6 @@
 let db = null
 
+window.indexedDB.deleteDatabase('db-books')
 const dbConnection = window.indexedDB.open('db-books', 1)
 
 function initialiseDatasource() {
