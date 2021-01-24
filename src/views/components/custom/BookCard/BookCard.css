@@ -1,0 +1,91 @@
+.bookcard {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  background-image: url(../../../../assets/images//paper-white.jpg);
+  border-radius: 15px;
+  position: relative;
+}
+
+.bookcard__bookimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+  height: 70%;
+}
+
+.bookcard__offers {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+
+.bookcard__discount {
+  padding: 2px 10px;
+  color: #ffffff;
+  border-radius: 8px;
+  background-color: #ff3b3c;
+  box-shadow: 2px 2px 10px 1px grey;
+}
+
+.bookcard__like.MuiIconButton-root {
+  padding: 2px;
+  background-color: #ffffff;
+}
+
+.bookcard__like.MuiIconButton-root:hover {
+  background-color: #ffffff;
+}
+
+.bookcard__favoritefilled.MuiSvgIcon-root {
+  fill: red;
+}
+
+.bookcard__bookdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  padding: 10px;
+}
+
+.bookcard__bookhead,
+.bookcard__bookinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* font-size: 2rem; */
+  /* font-weight: 900; */
+}
+
+.bookcard__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bookcard__rate {
+  color: #ff484a;
+}
+
+.bookcard__rating,
+.bookcard__buy {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bookcard__buy {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bookcard__rating .MuiRating-iconEmpty {
+  color: #000000;
+}

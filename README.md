@@ -1,22 +1,20 @@
 ## Summary
 
-This is a boilerplate setup project for React application
-
-For [Fullstack boilerplate](https://github.com/Vishwanath-Ramesh/fullstack-boilerplate)
+This is a project created when participating in Hackerearth's [ECS Frontend Developer Hiring Challenge](https://assessment.hackerearth.com/challenges/hiring/ecs-frontend-developer-hiring-challenge/) challenge
 
 ## Tools & Libraries used
 
 - React
 - JavaScript
-- Axios
+- Material UI
+- IndexedDB
 - Webpack
 - Babel
-- Eslint
-- Jest
+- Firebase
 
 ## Project Setup
 
-Install dependencies and devdependencies, run:
+Clone this repo and run the below
 
 using npm
 
@@ -39,3 +37,6 @@ npm run dev
 or
 yarn dev
 ```
+
+You can also open
+[the deployed app on Firebase](https://ecs-bookrepo.web.app/).

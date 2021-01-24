@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  padding: 0rem 2rem;
+  gap: 2rem;
+}
+
+.navbar__logo {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar__fav {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.navbar__account {
+  cursor: pointer;
+}
+
+.navbar__cart {
+  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
