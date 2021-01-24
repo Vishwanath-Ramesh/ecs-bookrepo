@@ -3,6 +3,7 @@ import React from 'react'
 import useAppContext from '../views/components/hooks/useAppContext'
 import ErrorBoundary from '../views/pages/ErrorBoundary/ErrorBoundary'
 import Routes from '../views/Routes/Routes'
+import dataBase from '../services/database'
 import './App.css'
 
 function appReducer(state, action) {
@@ -39,6 +40,13 @@ const App = () => {
   }
   const [state, dispatch] = React.useReducer(appReducer, initialState)
   const { AppProvider } = useAppContext()
+
+  React.useEffect(() => {
+    async function fetchData() {
+      await dataBase.initialiseDatasource()
+    }
+    fetchData()
+  }, [])
 
   return !window.indexedDB ? (
     "This browser doesn't support IndexedDB"

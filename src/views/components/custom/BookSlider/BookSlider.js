@@ -23,14 +23,10 @@ const BookSlider = () => {
   }
 
   React.useEffect(() => {
-    async function fetchData() {
-      await dataBase.initialiseDatasource()
-      dataBase.readData(IDBKeyRange.lowerBound(1), 100).then((responseData) => {
-        setData(responseData)
-        setIsLoading(false)
-      })
-    }
-    fetchData()
+    dataBase.readData(IDBKeyRange.lowerBound(1), 100).then((responseData) => {
+      setData(responseData)
+      setIsLoading(false)
+    })
   }, [])
 
   return (
